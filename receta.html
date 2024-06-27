@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Receta-Blue dental</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid position-relative bg-white d-flex p-0">
+    <!-- Spinner Start -->
+    <div id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Sidebar Start -->
+    <div class="sidebar pe-4 pb-3">
+      <nav class="navbar bg-light navbar-light">
+        <a href="#" class=" mx-4 mb-3">
+          <img src="./img/logi.jpeg" alt="" width="200px">
+        </a>
+        <div class="d-flex align-items-center ms-4 mb-4">
+          <div class="position-relative">
+            <img class="rounded-circle" src="img/blue.jpg" alt="" style="width: 40px; height: 40px;">
+            <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1">
+            </div>
+          </div>
+          <div class="ms-3">
+            <h6 class="mb-0">Dra. María Palencia</h6>
+            <span>Dentista general</span>
+          </div>
+        </div>
+        <div class="navbar-nav w-100">
+          <a style="color: #15b9d9;" href="dashboard.html" class="nav-item nav-link active"><i
+              class="bi bi-house-door"></i>
+              Inicio</a>
+          <a style="color: #15b9d9;" href="personal.html" class="nav-link dropdown-toggle"><i
+              class="bi bi-people-fill"></i>
+            Personal</a>
+          <a style="color: #15b9d9;" href="paciente.html" class="nav-item nav-link"><i class="bi bi-person-circle"></i>
+            Pacientes</a>
+          <a style="color: #15b9d9;" href="cita.html" class="nav-item nav-link"><i
+              class="bi bi-calendar2-week-fill"></i> Citas
+            médicas</a>
+          <a style="color: #15b9d9;" href="orden.html" class="nav-item nav-link"><i class="bi bi-clipboard"></i> Orden
+            médicas</a>
+          <a style="color: #15b9d9;" href="receta.html" class="nav-item nav-link"><i class="bi bi-box-seam"></i> Receta
+            médica</a>
+        </div>
+      </nav>
+    </div>
+    <!-- Sidebar End -->
+
+
+    <!-- Content Start -->
+    <div class="content">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+        <a href="dashboard.html" class="navbar-brand d-flex d-lg-none me-4">
+          <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
+        </a>
+        <a href="#" class="sidebar-toggler flex-shrink-0" style="color: #15b9d9;">
+          <i class="fa fa-bars"></i>
+        </a>
+        <form class="d-none d-md-flex ms-4 ">
+          <input class="form-control border-0" type="Buscar" placeholder="Buscar">
+        </form>
+        <div class="navbar-nav align-items-center ms-auto ">
+          <div class="nav-item dropdown ">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+              <i class="fa fa-envelope me-lg-2"></i>
+              <span class="d-none d-lg-inline-flex">Mensajes</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+              <a href="#" class="dropdown-item">
+                <div class="d-flex align-items-center">
+                  <img class="rounded-circle" src="img/mensaje1.jpg" alt="" style="width: 40px; height: 40px;">
+                  <div class="ms-2">
+                    <h6 class="fw-normal mb-0">Katerine Buelvas te envió un mensaje</h6>
+                    <small>Hace 10 minutos</small>
+                  </div>
+                </div>
+              </a>
+              <hr class="dropdown-divider">
+              <a href="#" class="dropdown-item">
+                <div class="d-flex align-items-center">
+                  <img class="rounded-circle" src="img/mensaje2.jpg" alt="" style="width: 40px; height: 40px;">
+                  <div class="ms-2">
+                    <h6 class="fw-normal mb-0">Cristian te envió un mensaje</h6>
+                    <small>Hace 15 minutos</small>
+                  </div>
+                </div>
+              </a>
+              <hr class="dropdown-divider">
+              <a href="#" class="dropdown-item">
+                <div class="d-flex align-items-center">
+                  <img class="rounded-circle" src="img/mensaje3.jpg" alt="" style="width: 40px; height: 40px;">
+                  <div class="ms-2">
+                    <h6 class="fw-normal mb-0">María Perez te envió un mensaje</h6>
+                    <small>Hace 25 minutos</small>
+                  </div>
+                </div>
+              </a>
+              <hr class="dropdown-divider">
+              <a href="#" class="dropdown-item text-center">Ver todos los mensajes</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+              <i class="fa fa-bell me-lg-2"></i>
+              <span class="d-none d-lg-inline-flex">Notificación</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+              <a href="#" class="dropdown-item">
+                <h6 class="fw-normal mb-0">Perfil actualizado</h6>
+                <small>Hace 15 minutos</small>
+              </a>
+              <hr class="dropdown-divider">
+              <a href="#" class="dropdown-item">
+                <h6 class="fw-normal mb-0">Nuevo usuario agragado</h6>
+                <small>Hace 15 minutos</small>
+              </a>
+              <hr class="dropdown-divider">
+              <a href="#" class="dropdown-item">
+                <h6 class="fw-normal mb-0">Contraseña cambiada</h6>
+                <small>Hace 15 minutos</small>
+              </a>
+              <hr class="dropdown-divider">
+              <a href="#" class="dropdown-item text-center">Ver todas las notificaciones</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+              <img class="rounded-circle me-lg-2" src="img/blue.jpg" alt="" style="width: 40px; height: 40px;">
+              <span class="d-none d-lg-inline-flex">Dra. María Palencia</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+              <a href="#" class="dropdown-item">Mi perfil</a>
+              <a href="#" class="dropdown-item">Configuración</a>
+              <a href="login.html" class="dropdown-item">Cerrar sesión</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Form Start -->
+      <div class="container-fluid pt-4 px-4">
+        <div class="container-fluid">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1>Nueva Receta Médica</h1>
+            <input type="date" class="form-control w-auto" placeholder="20 de Junio 2024">
+          </div>
+          <div class="card card-custom border-0 p-3">
+            <form>
+              <!-- Datos del Paciente -->
+              <div class="mb-4">
+                <h2>Datos del Paciente</h2>
+                <div class="mb-3">
+                  <label for="patientName" class="form-label">Nombre del Paciente</label>
+                  <input type="text" class="form-control" id="patientName" required>
+                </div>
+                <div class="mb-3">
+                  <label for="patientAge" class="form-label">Edad</label>
+                  <input type="number" class="form-control" id="patientAge" required>
+                </div>
+                <div class="mb-3">
+                  <label for="patientGender" class="form-label">Género</label>
+                  <select class="form-select" id="patientGender" required>
+                    <option value="">Seleccione...</option>
+                    <option value="male">Masculino</option>
+                    <option value="female">Femenino</option>
+                    <option value="other">Otro</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="patientAddress" class="form-label">Dirección</label>
+                  <input type="text" class="form-control" id="patientAddress" required>
+                </div>
+              </div>
+
+              <!-- Datos del Médico -->
+              <div class="mb-4">
+                <h2>Datos del Médico</h2>
+                <div class="mb-3">
+                  <label for="doctorName" class="form-label">Nombre del Médico</label>
+                  <input type="text" class="form-control" id="doctorName" required>
+                </div>
+                <div class="mb-3">
+                  <label for="doctorLicense" class="form-label">Número de Licencia</label>
+                  <input type="text" class="form-control" id="doctorLicense" required>
+                </div>
+                <div class="mb-3">
+                  <label for="doctorSpecialty" class="form-label">Especialidad</label>
+                  <input type="text" class="form-control" id="doctorSpecialty" required>
+                </div>
+                <div class="mb-3">
+                  <label for="doctorContact" class="form-label">Contacto</label>
+                  <input type="text" class="form-control" id="doctorContact" required>
+                </div>
+              </div>
+
+              <!-- Datos de la Receta -->
+              <div class="mb-4">
+                <h2>Datos de la Receta</h2>
+                <div class="mb-3">
+                  <label for="prescriptionDate" class="form-label">Fecha de la Receta</label>
+                  <input type="date" class="form-control" id="prescriptionDate" required>
+                </div>
+                <div class="mb-3">
+                  <label for="medications" class="form-label">Medicamentos</label>
+                  <textarea class="form-control" id="medications" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="dosage" class="form-label">Dosis e Instrucciones</label>
+                  <textarea class="form-control" id="dosage" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="additionalNotes" class="form-label">Notas Adicionales</label>
+                  <textarea class="form-control" id="additionalNotes" rows="3"></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary"
+                style="background-color: #15b9d9; border-color: #15b9d9;">Enviar</button>
+            </form>
+          </div>
+
+
+
+
+
+
+
+
+          <!-- Footer Start -->
+          <div class="container-fluid pt-4 px-4">
+            <div class="bg-light rounded-top p-4">
+              <div class="row">
+                <div class="col-12 col-sm-6 text-center text-sm-start">
+                  &copy; <a href="#" style="color: #15b9d9;">María José
+                    Paternina López</a>- 2024
+                </div>
+                <div class="col-md-6 text-center text-md-end text-dark">
+                  <!-- Frase odontologica." -->
+                  “Lo que realmente tiene importancia para cualquier <br> clínica es lo que sucede en la mente
+                  del
+                  paciente”
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer End -->
+        </div>
+        <!-- Content End -->
+
+
+        <!-- Back to Top -->
+        <a style="background-color: #15b9d9; border-color: #15b9d9;" href="#"
+          class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+      </div>
+
+      <!-- JavaScript Libraries -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="lib/chart/chart.min.js"></script>
+      <script src="lib/easing/easing.min.js"></script>
+      <script src="lib/waypoints/waypoints.min.js"></script>
+      <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+      <script src="lib/tempusdominus/js/moment.min.js"></script>
+      <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+      <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+      <!-- Template Javascript -->
+      <script src="js/main2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Paciente-Blue dental</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid position-relative bg-white d-flex p-0">
+    <!-- Spinner Start -->
+    <div id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Sidebar Start -->
+    <div class="sidebar pe-4 pb-3">
+      <nav class="navbar bg-light navbar-light">
+        <a href="#" class=" mx-4 mb-3">
+          <img src="./img/logi.jpeg" alt="" width="200px">
+        </a>
+        <div class="d-flex align-items-center ms-4 mb-4">
+          <div class="position-relative">
+            <img class="rounded-circle" src="img/blue.jpg" alt="" style="width: 40px; height: 40px;">
+            <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1">
+            </div>
+          </div>
+          <div class="ms-3">
+            <h6 class="mb-0">Dra. María Palencia</h6>
+            <span>Dentista general</span>
+          </div>
+        </div>
+        <div class="navbar-nav w-100">
+          <a style="color: #15b9d9;" href="dashboard.html" class="nav-item nav-link active"><i
+              class="bi bi-house-door"></i>
+              Inicio</a>
+          <a style="color: #15b9d9;" href="personal.html" class="nav-link dropdown-toggle"><i
+              class="bi bi-people-fill"></i>
+            Personal</a>
+          <a style="color: #15b9d9;" href="paciente.html" class="nav-item nav-link"><i class="bi bi-person-circle"></i>
+            Pacientes</a>
+          <a style="color: #15b9d9;" href="cita.html" class="nav-item nav-link"><i
+              class="bi bi-calendar2-week-fill"></i> Citas
+            médicas</a>
+          <a style="color: #15b9d9;" href="orden.html" class="nav-item nav-link"><i class="bi bi-clipboard"></i> Orden
+            médicas</a>
+          <a style="color: #15b9d9;" href="receta.html" class="nav-item nav-link"><i class="bi bi-box-seam"></i> Receta
+            médica</a>
+        </div>
+      </nav>
+    </div>
+    <!-- Sidebar End -->
+
+
+    <!-- Content Start -->
+    <div class="content">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+        <a href="#" class="navbar-brand d-flex d-lg-none me-4">
+          <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
+        </a>
+        <a href="#" class="sidebar-toggler flex-shrink-0" style="color: #15b9d9;">
+          <i class="fa fa-bars"></i>
+        </a>
+        <form class="d-none d-md-flex ms-4 ">
+          <input class="form-control border-0" type="Buscar" placeholder="Buscar">
+        </form>
+        <div class="navbar-nav align-items-center ms-auto ">
+          <div class="nav-item dropdown ">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+              <i class="fa fa-envelope me-lg-2"></i>
+              <span class="d-none d-lg-inline-flex">Mensajes</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+              <a href="#" class="dropdown-item">
+                <div class="d-flex align-items-center">
+                  <img class="rounded-circle" src="img/mensaje1.jpg" alt="" style="width: 40px; height: 40px;">
+                  <div class="ms-2">
+                    <h6 class="fw-normal mb-0">Katerine Buelvas te envió un mensaje</h6>
+                    <small>Hace 10 minutos</small>
+                  </div>
+                </div>
+              </a>
+              <hr class="dropdown-divider">
+              <a href="#" class="dropdown-item">
+                <div class="d-flex align-items-center">
+                  <img class="rounded-circle" src="img/mensaje2.jpg" alt="" style="width: 40px; height: 40px;">
+                  <div class="ms-2">
+                    <h6 class="fw-normal mb-0">Cristian te envió un mensaje</h6>
+                    <small>Hace 15 minutos</small>
+                  </div>
+                </div>
+              </a>
+              <hr class="dropdown-divider">
+              <a href="#" class="dropdown-item">
+                <div class="d-flex align-items-center">
+                  <img class="rounded-circle" src="img/mensaje3.jpg" alt="" style="width: 40px; height: 40px;">
+                  <div class="ms-2">
+                    <h6 class="fw-normal mb-0">María Perez te envió un mensaje</h6>
+                    <small>Hace 25 minutos</small>
+                  </div>
+                </div>
+              </a>
+              <hr class="dropdown-divider">
+              <a href="#" class="dropdown-item text-center">Ver todos los mensajes</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+              <i class="fa fa-bell me-lg-2"></i>
+              <span class="d-none d-lg-inline-flex">Notificación</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+              <a href="#" class="dropdown-item">
+                <h6 class="fw-normal mb-0">Perfil actualizado</h6>
+                <small>Hace 15 minutos</small>
+              </a>
+              <hr class="dropdown-divider">
+              <a href="#" class="dropdown-item">
+                <h6 class="fw-normal mb-0">Nuevo usuario agragado</h6>
+                <small>Hace 15 minutos</small>
+              </a>
+              <hr class="dropdown-divider">
+              <a href="#" class="dropdown-item">
+                <h6 class="fw-normal mb-0">Contraseña cambiada</h6>
+                <small>Hace 15 minutos</small>
+              </a>
+              <hr class="dropdown-divider">
+              <a href="#" class="dropdown-item text-center">Ver todas las notificaciones</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+              <img class="rounded-circle me-lg-2" src="img/blue.jpg" alt="" style="width: 40px; height: 40px;">
+              <span class="d-none d-lg-inline-flex">Dra. María Palencia</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+              <a href="#" class="dropdown-item">Mi perfil</a>
+              <a href="#" class="dropdown-item">Configuración</a>
+              <a href="login.html" class="dropdown-item">Cerrar sesión</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Form Start -->
+      <div class="container-fluid pt-4 px-4">
+        <div class="container-fluid">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1>Nuevo Paciente</h1>
+            <input type="date" class="form-control w-auto" placeholder="20 de Junio 2024">
+          </div>
+          <div class="card card-custom border-0 p-3">
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-personal-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-personal" type="button" role="tab" aria-controls="pills-personal"
+                  aria-selected="true">Personal</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contacto-tab" data-bs-toggle="pill" data-bs-target="#pills-contacto"
+                  type="button" role="tab" aria-controls="pills-contacto" aria-selected="false">Contacto</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-medica-tab" data-bs-toggle="pill" data-bs-target="#pills-medica"
+                  type="button" role="tab" aria-controls="pills-medica" aria-selected="false">Médica</button>
+              </li>
+            </ul>
+            <form>
+              <div class="tab-content" id="pills-tabContent">
+                <!-- Información Personal -->
+                <div class="tab-pane fade show active form-section" id="pills-personal" role="tabpanel"
+                  aria-labelledby="pills-personal-tab">
+                  <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre del paciente" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellido del paciente" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="tipoDocumento" class="form-label">Tipo de Documento</label>
+                    <select class="form-select" id="tipoDocumento" required>
+                      <option value="" disabled selected>Seleccione el tipo de documento</option>
+                      <option value="CC">Cédula de Ciudadanía</option>
+                      <option value="TI">Tarjeta de Identidad</option>
+                      <option value="CE">Cédula de Extranjería</option>
+                      <option value="PAS">Pasaporte</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="numeroIdentificacion" class="form-label">N° de Identificación</label>
+                    <input type="text" class="form-control" id="numeroIdentificacion"
+                      placeholder="Número de identificación" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+                    <input type="date" class="form-control" id="fechaNacimiento" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="genero" class="form-label">Género</label>
+                    <select class="form-select" id="genero" required>
+                      <option value="" disabled selected>Seleccione el género</option>
+                      <option value="masculino">Masculino</option>
+                      <option value="femenino">Femenino</option>
+                      <option value="otro">Otro</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="grupoSanguineo" class="form-label">Grupo Sanguíneo</label>
+                    <select class="form-select" id="grupoSanguineo" required>
+                      <option value="" disabled selected>Seleccione el grupo sanguíneo</option>
+                      <option value="A+">A+</option>
+                      <option value="A-">A-</option>
+                      <option value="B+">B+</option>
+                      <option value="B-">B-</option>
+                      <option value="AB+">AB+</option>
+                      <option value="AB-">AB-</option>
+                      <option value="O+">O+</option>
+                      <option value="O-">O-</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="estatura" class="form-label">Estatura (cm)</label>
+                    <input type="number" class="form-control" id="estatura" placeholder="Estatura en centímetros"
+                      required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="peso" class="form-label">Peso (kg)</label>
+                    <input type="number" class="form-control" id="peso" placeholder="Peso en kilogramos" required>
+                  </div>
+                </div>
+                <!-- Información de Contacto -->
+                <div class="tab-pane fade form-section" id="pills-contacto" role="tabpanel"
+                  aria-labelledby="pills-contacto-tab">
+                  <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="Número de teléfono" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="direccion" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Dirección del paciente"
+                      required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="departamento" class="form-label">Departamento</label>
+                    <select class="form-select" id="departamento" required>
+                      <option value="" disabled selected>Seleccione el departamento</option>
+                      <option value="Amazonas">Amazonas</option>
+                      <option value="Antioquia">Antioquia</option>
+                      <option value="Arauca">Arauca</option>
+                      <option value="Atlántico">Atlántico</option>
+                      <option value="Bolívar">Bolívar</option>
+                      <option value="Boyacá">Boyacá</option>
+                      <option value="Caldas">Caldas</option>
+                      <option value="Caquetá">Caquetá</option>
+                      <option value="Casanare">Casanare</option>
+                      <option value="Cauca">Cauca</option>
+                      <option value="Cesar">Cesar</option>
+                      <option value="Chocó">Chocó</option>
+                      <option value="Córdoba">Córdoba</option>
+                      <option value="Cundinamarca">Cundinamarca</option>
+                      <option value="Guainía">Guainía</option>
+                      <option value="Guaviare">Guaviare</option>
+                      <option value="Huila">Huila</option>
+                      <option value="La Guajira">La Guajira</option>
+                      <option value="Magdalena">Magdalena</option>
+                      <option value="Meta">Meta</option>
+                      <option value="Nariño">Nariño</option>
+                      <option value="Norte de Santander">Norte de Santander</option>
+                      <option value="Putumayo">Putumayo</option>
+                      <option value="Quindío">Quindío</option>
+                      <option value="Risaralda">Risaralda</option>
+                      <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                      <option value="Santander">Santander</option>
+                      <option value="Sucre">Sucre</option>
+                      <option value="Tolima">Tolima</option>
+                      <option value="Valle del Cauca">Valle del Cauca</option>
+                      <option value="Vaupés">Vaupés</option>
+                      <option value="Vichada">Vichada</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="municipio" class="form-label">Municipio</label>
+                    <select class="form-select" id="municipio" required>
+                      <option value="" disabled selected>Seleccione el municipio</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="codigoPostal" class="form-label">Código Postal</label>
+                    <input type="text" class="form-control" id="codigoPostal" placeholder="Código postal" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="entidadSalud" class="form-label">Entidad de Salud</label>
+                    <select class="form-select" id="entidadSalud" required>
+                      <option value="" disabled selected>Seleccione la entidad de salud</option>
+                      <option value="Sanitas">Sanitas</option>
+                      <option value="Sura">Sura</option>
+                      <option value="Compensar">Compensar</option>
+                      <option value="Nueva EPS">Nueva EPS</option>
+                      <option value="Coomeva">Coomeva</option>
+                      <option value="Salud Total">Salud Total</option>
+                      <option value="Famisanar">Famisanar</option>
+                      <option value="Cafesalud">Cafesalud</option>
+                      <option value="Medimás">Medimás</option>
+                      <option value="Aliansalud">Aliansalud</option>
+                      <option value="Ecopetrol">Ecopetrol</option>
+                      <option value="Servicio Occidental de Salud (SOS)">Servicio Occidental de Salud (SOS)</option>
+                      <option value="Mutual Ser">Mutual Ser</option>
+                      <option value="Ambuq">Ambuq</option>
+                      <option value="Cafam">Cafam</option>
+                      <option value="Salud Vida">Salud Vida</option>
+                      <option value="Capital Salud">Capital Salud</option>
+                      <option value="Asmet Salud">Asmet Salud</option>
+                      <option value="Comfachocó">Comfachocó</option>
+                      <option value="Comfamiliar Huila">Comfamiliar Huila</option>
+                      <option value="Comfamiliar Nariño">Comfamiliar Nariño</option>
+                      <option value="Comfenalco Antioquia">Comfenalco Antioquia</option>
+                      <option value="Comfenalco Valle">Comfenalco Valle</option>
+                      <option value="Emssanar">Emssanar</option>
+                      <option value="Mallamas">Mallamas</option>
+                      <option value="Mutual Ser EPS">Mutual Ser EPS</option>
+                      <option value="Capresoca">Capresoca</option>
+                      <option value="Comparta">Comparta</option>
+                      <option value="Convida">Convida</option>
+                      <option value="Dusakawi">Dusakawi</option>
+                      <option value="Ecoopsos">Ecoopsos</option>
+                      <option value="Empresas Públicas de Medellín (EPM)">Empresas Públicas de Medellín (EPM)</option>
+                      <option value="EPS Sanitas">EPS Sanitas</option>
+                      <option value="Famisanar EPS">Famisanar EPS</option>
+                      <option value="Comfama">Comfama</option>
+                      <option value="Salud Total EPS">Salud Total EPS</option>
+                      <option value="Savia Salud">Savia Salud</option>
+                    </select>
+
+                  </div>
+                </div>
+                <!-- Información Médica -->
+                <div class="tab-pane fade form-section" id="pills-medica" role="tabpanel"
+                  aria-labelledby="pills-medica-tab">
+                  <div class="mb-3">
+                    <label for="antecedentes" class="form-label">Antecedentes Médicos</label>
+                    <textarea class="form-control" id="antecedentes" rows="3"
+                      placeholder="Describa los antecedentes médicos del paciente"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="alergias" class="form-label">Alergias</label>
+                    <textarea class="form-control" id="alergias" rows="2"
+                      placeholder="Describa las alergias del paciente"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="medicamentos" class="form-label">Medicamentos Actuales</label>
+                    <textarea class="form-control" id="medicamentos" rows="2"
+                      placeholder="Liste los medicamentos actuales que toma el paciente"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary"
+                  style="padding-left: 2.5rem; padding-right: 2.5rem; background-color: #15b9d9; border-color: #15b9d9;">Registrar
+                  Paciente</button>
+              </div>
+            </form>
+          </div>
+
+
+
+
+
+
+
+
+          <!-- Footer Start -->
+          <div class="container-fluid pt-4 px-4">
+            <div class="bg-light rounded-top p-4">
+              <div class="row">
+                <div class="col-12 col-sm-6 text-center text-sm-start">
+                  &copy; <a href="#" style="color: #15b9d9;">María José
+                    Paternina López</a>- 2024
+                </div>
+                <div class="col-md-6 text-center text-md-end text-dark">
+                  <!-- Frase odontologica." -->
+                  “Lo que realmente tiene importancia para cualquier <br> clínica es lo que sucede en la mente
+                  del
+                  paciente”
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer End -->
+        </div>
+        <!-- Content End -->
+
+
+        <!-- Back to Top -->
+        <a style="background-color: #15b9d9; border-color: #15b9d9;" href="#"
+          class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+      </div>
+
+      <!-- JavaScript Libraries -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="lib/chart/chart.min.js"></script>
+      <script src="lib/easing/easing.min.js"></script>
+      <script src="lib/waypoints/waypoints.min.js"></script>
+      <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+      <script src="lib/tempusdominus/js/moment.min.js"></script>
+      <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+      <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+      <!-- Template Javascript -->
+      <script src="js/main2.js"></script>
+</body>
+
+</html>
